@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  padding: 10px;
+  overflow-y: scroll;
+  height: 100vh;
+  background-color: darkgrey;
+}
+
+nav {
+  padding: 10px;
+  width: 400px;
+  height: 100vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+pre code {
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
+}

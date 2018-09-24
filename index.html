@@ -10,13 +10,103 @@
 
   <body>
     <nav id="navbar">
+      <header>
+        JavaScript Docs
+      </header>
+      <a class="nav-link" href="#basics">Basics</a>
+      <a class="nav-link" href="#comments">Comments</a>
+      <a class="nav-link" href="#declarations">Declarations</a>
+      <a class="nav-link" href="#data_structures_and_types">Data structures and types</a>
+      <a class="nav-link" href="#literals">Literals</a>
     </nav>
     <main id="main-doc">
-      <section id="" class="main-section">
+      <section id="basics" class="main-section">
         <header>
-
+          <h2>Basics</h2>
         </header>
+        <p>JavaScript borrows most of its syntax from Java, but is also influenced by Awk, Perl and Python.</p>
+        <p>JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
+        <pre>
+          <code>
+            var Früh = "foobar";
+          </code>
+        </pre>
+        <p>But, the variable früh is not the same as Früh because JavaScript is case sensitive.</p>
       </section>
-    </main>
+
+      <section id="comments" class="main-section">
+        <header>
+          <h2>Comments</h2>
+        </header>
+        <p>The syntax of comments is the same as in C++ and in many other languages:</p>
+        <pre>
+          <code>
+            // a one line comment
+            /* this is a longer, 
+            * multi-line comment
+            */
+            /* You can't, however, /* nest comments */ SyntaxError */
+          </code>
+        </pre>
+        <p>Comments behave like whitespace and are discarded during script execution.</p>
+      </section>
+
+      <section id="declarations" class="main-section">
+        <header>
+          <h2>Declarations</h2>
+        </header>
+        <p>There are three kinds of declarations in JavaScript.</p>
+        <ul>
+          <li><pre><code>var</code></pre></li>
+          <li><pre><code>let</code></pre></li>
+          <li><pre><code>const</code></pre></li>
+        </ul>
+      </section>
+
+      <section id="data_structures_and_types" class="main-section">
+        <header>
+          <h2>Data structures and types</h2>
+        </header>
+        <h4>Data types</h4>
+        <p>The latest ECMAScript standard defines seven data types:</p>
+        <ul>
+          <li>
+            Six data types that are primitives:
+            <ul>
+              <li>Boolean. true and false.</li>
+              <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+              <li>undefined. A top-level property whose value is not defined.</li>
+              <li>Number. An integer or floating point number. For example: 42 or 3.14159.</li>
+              <li>String. A sequence of characters that represent a text value. For example:  "Howdy"</li>
+              <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable.</li>
+            </ul>
+          </li>
+          <li>
+            and Object
+          </li>
+        </ul>
+        <p>Although these data types are relatively few, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
+
+        <section id="literals" class="main-section">
+          <header>
+            <h2>Literals</h2>
+          </header>
+          <p>You use literals to represent values in JavaScript. These are fixed values, not variables, that you literally provide in your script. This section describes the following types of literals:</p>
+          <ul>
+            <li>Array literals</li>
+            <li>Boolean literals</li>
+            <li>Floating-point literals</li>
+            <li>Integers</li>
+            <li>Object literals</li>
+            <li>RegExp literals</li>
+            <li>String literals</li>
+          </ul>
+          <h4>Array literals</h4>
+          <p>The following example creates the coffees array with three elements and a length of three:</p>
+          <pre>
+            <code>var coffees = ['French Roast', 'Colombian', 'Kona'];</code>
+          </pre>
+          <p>Array literals are also Array objects. See Array and Indexed collections for details on Array objects.</p>
+      </main>
   </body>
 </html>
