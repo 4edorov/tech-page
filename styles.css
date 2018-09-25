@@ -1,10 +1,11 @@
 body {
-  display: flex;
   margin: 0;
   overflow: hidden;
 }
 
 main {
+  position: absolute;
+  margin-left: 374px;
   padding: 10px;
   overflow-y: scroll;
   height: 100vh;
@@ -12,12 +13,35 @@ main {
 }
 
 nav {
-  padding: 10px;
-  width: 400px;
+  width: 370px;
   height: 100vh;
-  border: 1px solid black;
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
+  position: fixed;
+}
+
+nav > header {
+  text-align: center;
+}
+
+.nav-link {
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: whitesmoke;
+  padding: 25px 10px;
+}
+
+.nav-link:not(:last-child) {
+  border-bottom: 1px solid;
+}
+
+nav > a:link {
+  color: black;
+}
+
+nav > a:visited {
+  color: black;
 }
 
 pre code {
@@ -25,4 +49,19 @@ pre code {
   border: 1px solid #999;
   display: block;
   padding: 20px;
+}
+
+header {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin: 35px 0px 15px 0px;
+}
+
+p {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+li {
+  font-size: 18px;
 }
