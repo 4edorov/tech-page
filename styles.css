@@ -1,14 +1,11 @@
 body {
   margin: 0;
-  overflow: hidden;
 }
 
 main {
   position: absolute;
   margin-left: 374px;
   padding: 10px;
-  overflow-y: scroll;
-  height: 100vh;
   background-color: darkgrey;
 }
 
@@ -44,7 +41,7 @@ nav > a:visited {
   color: black;
 }
 
-pre code {
+code {
   background-color: #eee;
   border: 1px solid #999;
   display: block;
@@ -64,4 +61,21 @@ p {
 
 li {
   font-size: 18px;
+}
+
+@media (max-width: 880px) {
+  nav {
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  main {
+    margin-left: 0px;
+  }
+
+  .nav-link {
+    font-size: 1.0em;
+    padding: 15px 5px;
+  }
 }
