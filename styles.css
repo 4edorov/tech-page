@@ -16,6 +16,7 @@ nav {
   display: flex;
   flex-direction: column;
   position: fixed;
+  background-color: white;
 }
 
 nav > header {
@@ -67,7 +68,18 @@ li {
   nav {
     width: auto;
     height: auto;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+
+  main {
+    margin-top: 305px;
+  }
+
+  nav > header {
+    font-size: 2.0em;
+    margin: 15px 0px 5px 0px;
   }
 
   main {
@@ -78,4 +90,58 @@ li {
     font-size: 1.0em;
     padding: 15px 5px;
   }
+
+  .arrows {
+    display: block !important;
+  }
+
+  section::before {
+    display: block;
+    content: " "; 
+    margin-top: -305px; 
+    height: 305px; 
+    visibility: hidden; 
+    pointer-events: none;
+  }
+}
+
+@media (min-width: 881px) {
+  nav > a {
+    display: block !important;
+  }
+
+  main {
+    margin-top: 0px !important;
+  }
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrows {
+  float: right;
+  margin-right: 10px;
+  display: none;
+}
+
+.hidden-elem {
+  display: none;
 }
